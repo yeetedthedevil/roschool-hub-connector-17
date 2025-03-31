@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ExternalLink, MapPin, Phone, Mail } from "lucide-react";
 import {
@@ -28,12 +27,12 @@ interface SchoolCardProps {
 const SchoolCard = ({ school }: SchoolCardProps) => {
   return (
     <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
-      <div className="relative h-48 overflow-hidden">
-        <img
-          src={school.imageSrc}
-          alt={school.name}
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-        />
+      <div className="relative h-48 overflow-hidden bg-gray-300">
+        {school.imageSrc === "bg-gray-300" && (
+          <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-500">
+            No Image
+          </div>
+        )}
       </div>
       <CardHeader className="pb-2">
         <CardTitle className="text-xl text-roschool-blue">{school.name}</CardTitle>

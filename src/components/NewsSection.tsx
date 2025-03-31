@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { ArrowRight, Calendar, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -22,7 +21,7 @@ const newsData: NewsItemType[] = [
     date: "N/A",
     author: "N/A",
     category: "N/A",
-    imageSrc: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imageSrc: "bg-gray-300",
   },
   {
     id: 2,
@@ -31,7 +30,7 @@ const newsData: NewsItemType[] = [
     date: "N/A",
     author: "N/A",
     category: "N/A",
-    imageSrc: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imageSrc: "bg-gray-300",
   },
   {
     id: 3,
@@ -40,7 +39,7 @@ const newsData: NewsItemType[] = [
     date: "N/A",
     author: "N/A",
     category: "N/A",
-    imageSrc: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imageSrc: "bg-gray-300",
   },
 ];
 
@@ -68,7 +67,6 @@ const NewsSection = () => {
           </p>
         </div>
 
-        {/* Category filters */}
         <div className="flex flex-wrap justify-center gap-2 mb-8">
           {categories.map((category) => (
             <Badge 
@@ -85,16 +83,13 @@ const NewsSection = () => {
           ))}
         </div>
 
-        {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredNews.slice(0, visibleNews).map((news) => (
             <div key={news.id} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={news.imageSrc} 
-                  alt={news.title} 
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
+              <div className="relative h-48 overflow-hidden bg-gray-300">
+                <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-500">
+                  No Image
+                </div>
                 <Badge className="absolute top-4 right-4 bg-roschool-blue">{news.category}</Badge>
               </div>
               <div className="p-6">
