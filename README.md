@@ -1,8 +1,26 @@
-# Welcome to your Lovable project
+
+# Welcome to your Roschools Hub project
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/bfc4775d-3f7a-4ebf-9bb7-ab30a207f403
+
+## Docker Deployment
+
+This project can be easily deployed using Docker. Follow these steps:
+
+```sh
+# Build and start the container
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop the container
+docker-compose down
+```
+
+The application will be available at http://localhost:8414
 
 ## How can I edit this code?
 
@@ -63,6 +81,8 @@ This project is built with .
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/bfc4775d-3f7a-4ebf-9bb7-ab30a207f403) and click on Share -> Publish.
+
+Alternatively, use the Docker setup to deploy the application.
 
 ## Can I connect a custom domain to my Lovable project?
 
