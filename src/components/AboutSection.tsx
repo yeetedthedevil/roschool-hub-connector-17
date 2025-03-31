@@ -1,4 +1,3 @@
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Building2, Users, Book, BookOpen } from "lucide-react";
 
@@ -165,39 +164,17 @@ const AboutSection = () => {
                 management, and innovation to guide the Roschools network.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="flex justify-center">
                 <div className="text-center">
-                  <div className="w-24 h-24 rounded-full bg-roschool-lightGray mx-auto mb-4 overflow-hidden">
+                  <div className="w-32 h-32 rounded-full bg-roschool-lightGray mx-auto mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" 
-                      alt="Dr. James Wilson"
+                      src="/lovable-uploads/f712c699-4a96-4aa6-9c6c-a348f4d3c8b3.png" 
+                      alt="Rob Hastings"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="font-bold text-roschool-blue">Dr. James Wilson</h4>
+                  <h4 className="font-bold text-roschool-blue">Rob Hastings</h4>
                   <p className="text-sm text-roschool-gray">Chief Executive Officer</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-24 h-24 rounded-full bg-roschool-lightGray mx-auto mb-4 overflow-hidden">
-                    <img 
-                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" 
-                      alt="Dr. Sarah Chen"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h4 className="font-bold text-roschool-blue">Dr. Sarah Chen</h4>
-                  <p className="text-sm text-roschool-gray">Director of Education</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-24 h-24 rounded-full bg-roschool-lightGray mx-auto mb-4 overflow-hidden">
-                    <img 
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" 
-                      alt="Michael Thomas"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h4 className="font-bold text-roschool-blue">Michael Thomas</h4>
-                  <p className="text-sm text-roschool-gray">Director of Operations</p>
                 </div>
               </div>
             </div>
